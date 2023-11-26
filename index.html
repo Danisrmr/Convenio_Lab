@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <link href="script.js" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <title>Convenios</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <section class="head container">
+        <h1>Laboratorio de Realidad Virtual y Edición Digital</h1>
+        <h2>Centro de Innovación y Diseño</h2>
+        <h1>Convenios</h1>
+    </section> 
+
+    <!--Carrusel de imagenes-->
+    <section class="photo container">
+        <div class="swiper mySwiper">
+           <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imagenes/Pic_Gobernador.jpg" alt="Gob">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/Pic_Rector.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/Foto_Bimbo.JPG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/Foto_Ciencias.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/Pic_Rector.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/Foto_Lab.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/Foto_Trabajo.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/Foto_Lab.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/Foto_Blum.jpg" alt="">
+                </div>
+           </div>
+           <h5>Desliza para visualizar las imagenes</h5>
+        </div>
+    </section>
+
+    <!--Formulario/Documentos-->
+    <section class="main container">
+        <!--Formulario-->
+        <div class="form">
+            <form class="formulario" id="myform" action="">
+                <label for="nom_rep">Nombre del representante que firmará el documento (1)</label>
+                <input type="text" id="nom_rep" required>
+        
+                <label for="cargo">Cargo del representante que firmará el documento (2)</label>
+                <input type="text" id="cargo" required>
+      
+                <label for="org">Nombre del organismo académico, empresa, fundación, institución (3)</label>
+                <input type="text" id="org" required>
+                
+                <label for="ant">Si existe un antecedente previo con la Facultad de Arquitectura y Diseño con respecto al objeto del documento, favor de describirla (4)</label>
+                <input type="text" id="ant" required>
+                
+                <label for="conv">Tipo de convenio o acuerdo que se trabajará con la Facultad de Arquitectura y Diseño a través del Centro de Innovación y Diseño (5) </label>
+                <input type="text" id="conv" required>
+                
+                <label for="aut">Describa en un párrafo breve quién o qué autoridad faculta al representante que firmará el documento (6)</label>
+                <textarea type="text" id="aut" required></textarea>
+                
+                <label for="dom">Domicilio del organismo académico, empresa, fundación, institución que firmará el convenio (7)</label>
+                <input type="text" id="dom" required>
+                
+                <label for="serv_lab">Detalle los servicios o productos que solicita a la Facultad de Arquitectura y Diseño, a través del Centro de Innovación y Diseño, Laboratorio de Realidad Virtual y Edición Digital (8) </label>
+                <input type="text" id="serv_lab" required>
+                
+                <label for="serv_ext">Detalle los servicios o productos que entregará o acordará para la Facultad de Arquitectura y Diseño, a través del Centro de Innovación y Diseño, Laboratorio de Realidad Virtual y Edición Digital (9)</label>
+                <input type="text" id="serv_ext" required>
+                
+                <label for="nom_rep_op">Determine a un representante operativo de su equipo de trabajo para dar seguimiento, cumplimiento y ejecución al documento (10)</label>
+                <input type="text" id="nom_rep_op" required>
+
+                <label for="email">Correo electronico (donde se enviaran el documento)</label>
+                <input type="email" id="email" required>
+        
+                <div class="cont_boton"><input type="submit" id="boton_descargar" value="Descargar"></div>
+
+                <div class="cont_boton"><input type="submit" id="boton_enviar" value="Enviar"></div>
+            </form>
+        </div>
+
+        <!--Documento PDF-->
+        <div class="doc">
+            <iframe src="./Formato_esp.pdf" type="application.pdf" width="100%" height="100%"></iframe>
+            <!--<h5>Click aquí</h5>--> 
+        </div>
+        
+    </section>
+
+    <!--Pie de pagina-->
+    <section class="footer container">
+        <h3>Información</h3>
+        <ul class="footer-left">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">¿Quienes somos?</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
+
+        <ul class="footer-center">
+            <li><a>LEGALES</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Aviso de Privacidad</a></li>
+        </ul>
+    </section>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.38.0/docxtemplater.js"></script>
+    <script src="https://unpkg.com/pizzip@3.1.4/dist/pizzip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://unpkg.com/pizzip@3.1.4/dist/pizzip-utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js" ></script>
+
+
+</body>
+</html>
